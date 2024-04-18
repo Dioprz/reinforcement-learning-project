@@ -1,47 +1,49 @@
-Este repositorio contiene todos los ambientes construidos y referenciados en el proyecto final del curso Machine Learning. Para implementar nuestros ecosistemas usamos como boilerplate el ejemplo usado en el repositorio [gym_examples](https://github.com/Farama-Foundation/gym-examples), decisión que nos facilitaba reutilizar los elementos gráficos de un entorno renderizado mediante pygame, para así dedicarnos principalmente a la implementación de la lógica de cada ambiente.
+## Reinforcement Learning Project
 
-Los ambientes construidos son:
+##### EN
 
-- PushBox: Es el ambiente más sencillo y sobre el cuál se basan los demás. Sus características incluyen:
+This repository contains the environments designed and implemented for the final project of my *Machine Learning course at the Universidad Nacional de Colombia*. It also includes the project itself, showcasing the application of reinforcement learning techniques within these custom-built environments.
 
-    1. En su estado inicial se dispone un *agente* y una caja o *target* de manera aleatoria.
-    2. El agente tiene cuatro posibles acciones, desplazarse hacia arriba, abajo, izquierda y derecha.
-    3. Si el agente se encuentra en una posición adyacente al target, y se mueve en la dirección del mismo, entonces lo desplazará (i.e., el agente podrá empujar la caja).
-    4. La caja permanece fija en el entorno salvo que el agente la desplaze.
-    5. El objetivo del agente es empujar la caja hasta una región definida del ambiente.
-    6. La política del agente es binaria y dispersa. Esto quiere decir que el agente obtendrá 0 como recompensa en cada paso que no consigue el objetivo, y obtendrá 1 cuando sí lo logre.
+**Understanding the Environments**
 
-- PushBoxRand: Este ambiente tiene las mismas características que `PushBoxBaseEnv` exceptuando por la característica 4. En este caso el ambiente cambia la caja de forma aleatoria cada cierta cantidad de pasos (definida por el tamaño del ambiente). Adicionalmente añade a la característica 2 una quinta acción: permanecer en la posición actual.
+Each environment represents a world where an agent can interact with objects and navigate its surroundings. The agent takes actions, receives rewards or penalties based on those actions, and must learn to maximize its reward over time.
 
-- PushBoxRandPol1: Comparte las características de `PushBoxRand` pero modifica las recompensas que recibe el agente en cada paso. Éste entorno en particular recompensa los movimientos con 2 puntos, y penaliza quedarse en la misma posición con -1 puntos. Brinda 100 puntos al cumplir el objetivo.
+The provided environments progressively challenge the agent's decision-making capabilities. They all share some common characteristics:
 
-- PushBoxRandPol2: Comparte las características de `PushBoxRand` pero modifica las recompensas que recibe el agente en cada paso. Éste entorno en particular penaliza los desplazamientos con -1 punto, y recompensa quedarse en la misma posición con 2 puntos. Brinda 100 puntos al cumplir el objetivo.
+- A visual representation of the environment using Pygame.
+- An agent that can move around and interact with objects.
+- A reward system that provides feedback to the agent based on its actions.
 
----
+The core environment, PushBox, introduces the concept of pushing objects to a goal location. More complex variations add elements of randomness and modified reward structures to test the agent's adaptability.
 
-# Changelog
+For a more detailed explanation, look at the [EN docs ](./docs/EN.md)
 
-Debido a que no hay una forma práctica de enlazar commits desde el README de un repositorio, a continuación se dejan los identificadores de cada commit involucrado en la creación de cada entorno, para así poder ver qué modificiaciones se hicieron a partir del fork original:
+##### ES
 
-## PushBox (Entorno base)
+Este repositorio contiene los entornos diseñados e implementados para el proyecto final de mi *curso de Machine Learning en la Universidad Nacional de Colombia*. También se incluye el proyecto en sí, en donde se evidencia la aplicación de técnicas de aprendizaje por refuerzo dentro de estos entornos personalizados.
 
-- Actualización en las importaciones, los módulos y los requerimientos del módulo: 03437e0
+**Entendiendo los entornos**
 
-- Cambios gráficos: 224e778, 58b5b5a, 2fee43f, 926fb90.
+Cada entorno representa un mundo donde un agente puede interactuar con objetos y navegar su espacio. El agente toma acciones, recibe recompensas o penalizaciones en función de dichas acciones y debe aprender a maximizar su recompensa con el paso del tiempo.
 
-- Modificación en la lógica del método reset: a0220b6, 5366444
+Los entornos proporcionados desafían progresivamente las capacidades de toma de decisiones del agente. Todos comparten algunas características comunes:
 
-- Modificación en la lógica del método step: 509e425, 5366444
+- Una representación visual del entorno utilizando Pygame.
+- Un agente que puede moverse e interactuar con objetos.
+- Un sistema de recompensas que proporciona retroalimentación al agente en función de sus acciones.
 
-## PushBoxRand
+El entorno central, PushBox, introduce el concepto de empujar objetos hacia una ubicación objetivo. Variaciones más complejas añaden elementos de aleatoriedad y estructuras de recompensa modificadas para poner a prueba la adaptabilidad del agente.
 
-- Declaración en el módulo y creación del entorno: 10bb95a
+Para una explicación más detallada, consulte la [documentación en español](./docs/ES.md)
 
-- Cambios gráficos: 7e50435
+#### Authors
 
-- Cambio en la lógica del método step y en el inicializador del entorno: e998be4, 88f92d5, d647df3
+|Git user                                           |
+|-----------------------                            |
+|[Dioprz](https://github.com/Dioprz)                |
+|[thually](https://github.com/thually)              |
+|[aangulog](https://github.com/aangulog)            |
 
-## PushBoxRandPol[1,2]
+#### License
 
-- Creación de los ambientes y declaración en el módulo: 489c030
-
+This project is licensed under the GPL License.

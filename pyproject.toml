@@ -1,0 +1,12 @@
+[project]
+name = "custom_envs"
+version = "1.0.0"
+description = "A set of gym environments for RL"
+authors = [{name = "Dioprz", email = "diego.dioprz@gmail.com"}]
+dependencies = [
+  "gymnasium>=0.28.1",
+  "pygame>=2.1.0"
+]
+
+[projects.urls]
+Repository = "https://github.com/Dioprz/reinforcement-learning-project"
