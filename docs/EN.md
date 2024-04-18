@@ -1,6 +1,6 @@
 #### Technical explanation
 
-To implement our environments, we used the example in the gym_examples repository: [https://github.com/Farama-Foundation/gym-examples](https://github.com/Farama-Foundation/gym-examples) as a boilerplate. This decision facilitated the reuse of the graphical elements of a rendered environment using Pygame, allowing us to focus primarily on implementing the logic of each environment.
+To implement our environments, we used the example in the [gym_examples repository](https://github.com/Farama-Foundation/gym-examples) as a boilerplate. This decision facilitated the reuse of the graphical elements of a rendered environment using Pygame, allowing us to focus primarily on implementing the logic of each environment.
 
 The constructed environments are:
 

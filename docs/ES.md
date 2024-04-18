@@ -1,6 +1,6 @@
 #### Explicación técnica
 
-Para implementar nuestros ecosistemas, usamos como plantilla el ejemplo del repositorio gym_examples: [https://github.com/Farama-Foundation/gym-examples](https://github.com/Farama-Foundation/gym-examples). Esta decisión nos facilitó la reutilización de los elementos gráficos de un entorno renderizado mediante pygame, permitiéndonos dedicar nuestra atención principalmente a la implementación de la lógica de cada ambiente.
+Para implementar nuestros ecosistemas, usamos como plantilla el ejemplo del repositorio [gym_examples](https://github.com/Farama-Foundation/gym-examples). Esta decisión nos facilitó la reutilización de los elementos gráficos de un entorno renderizado mediante pygame, permitiéndonos dedicar nuestra atención principalmente a la implementación de la lógica de cada ambiente.
 
 Los entornos construidos son:
 
@@ -33,7 +33,7 @@ Puedes ver el proyecto completo, así como el uso de los entornos, importando el
 
 #### Notas adicionales
 
-- Debido a la falta de una forma práctica de enlazar commits desde el README de un repositorio, a continuación, se dejan los identificadores de cada commit involucrado en la creación de cada entorno, para poder ver qué modificaciones se hicieron a partir del fork original:
+Debido a la falta de una forma práctica de enlazar commits desde el README de un repositorio, a continuación, se dejan los identificadores de cada commit involucrado en la creación de cada entorno, para poder ver qué modificaciones se hicieron a partir del fork original:
 
 **PushBox (Entorno base)**
 
