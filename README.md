@@ -46,4 +46,4 @@ Para una explicación más detallada, consulte la [documentación en español](.
 
 #### License
 
-This project is licensed under the GPL License.
+This project is licensed under the GPLv3 License.
